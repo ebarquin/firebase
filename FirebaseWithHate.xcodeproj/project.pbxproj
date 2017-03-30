@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4911859E4BF9F25D003E881E /* Pods_FirebaseWithHate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF00000A7F20A8CEBA69011 /* Pods_FirebaseWithHate.framework */; };
+		9C9E24451E8D55B60013ECEB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9E24441E8D55B60013ECEB /* SecondViewController.swift */; };
 		9CA653F21E8C28BD00CA982D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA653F11E8C28BD00CA982D /* AppDelegate.swift */; };
 		9CA653F41E8C28BD00CA982D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA653F31E8C28BD00CA982D /* ViewController.swift */; };
 		9CA653F71E8C28BD00CA982D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA653F51E8C28BD00CA982D /* Main.storyboard */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7FF00000A7F20A8CEBA69011 /* Pods_FirebaseWithHate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseWithHate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8144F91326B4620F946FB20C /* Pods-FirebaseWithHate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseWithHate.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseWithHate/Pods-FirebaseWithHate.release.xcconfig"; sourceTree = "<group>"; };
+		98B955F5CF7B44884158D0C7 /* Pods-FirebaseWithHate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseWithHate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseWithHate/Pods-FirebaseWithHate.debug.xcconfig"; sourceTree = "<group>"; };
+		9C9E24441E8D55B60013ECEB /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9CA653EE1E8C28BD00CA982D /* FirebaseWithHate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseWithHate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA653F11E8C28BD00CA982D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CA653F31E8C28BD00CA982D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4911859E4BF9F25D003E881E /* Pods_FirebaseWithHate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37F4C01F19C2D5796E422DB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FF00000A7F20A8CEBA69011 /* Pods_FirebaseWithHate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78CE4C9782CBF0481ADE2699 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98B955F5CF7B44884158D0C7 /* Pods-FirebaseWithHate.debug.xcconfig */,
+				8144F91326B4620F946FB20C /* Pods-FirebaseWithHate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9CA653E51E8C28BD00CA982D = {
 			isa = PBXGroup;
 			children = (
 				9CA653F01E8C28BD00CA982D /* FirebaseWithHate */,
 				9CA653EF1E8C28BD00CA982D /* Products */,
+				78CE4C9782CBF0481ADE2699 /* Pods */,
+				37F4C01F19C2D5796E422DB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				9CA653F81E8C28BD00CA982D /* Assets.xcassets */,
 				9CA653FA1E8C28BD00CA982D /* LaunchScreen.storyboard */,
 				9CA653FD1E8C28BD00CA982D /* Info.plist */,
+				9C9E24441E8D55B60013ECEB /* SecondViewController.swift */,
 			);
 			path = FirebaseWithHate;
 			sourceTree = "<group>";
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA654001E8C28BD00CA982D /* Build configuration list for PBXNativeTarget "FirebaseWithHate" */;
 			buildPhases = (
+				001DB95813B82D727AFC6657 /* [CP] Check Pods Manifest.lock */,
 				9CA653EA1E8C28BD00CA982D /* Sources */,
 				9CA653EB1E8C28BD00CA982D /* Frameworks */,
 				9CA653EC1E8C28BD00CA982D /* Resources */,
+				EB9DED80621DF1A2A04E088A /* [CP] Embed Pods Frameworks */,
+				51C583BD057CA7AA14589F9F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,11 +166,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		001DB95813B82D727AFC6657 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		51C583BD057CA7AA14589F9F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseWithHate/Pods-FirebaseWithHate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB9DED80621DF1A2A04E088A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseWithHate/Pods-FirebaseWithHate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9CA653EA1E8C28BD00CA982D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9E24451E8D55B60013ECEB /* SecondViewController.swift in Sources */,
 				9CA653F41E8C28BD00CA982D /* ViewController.swift in Sources */,
 				9CA653F21E8C28BD00CA982D /* AppDelegate.swift in Sources */,
 			);
@@ -263,6 +342,7 @@
 		};
 		9CA654011E8C28BD00CA982D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98B955F5CF7B44884158D0C7 /* Pods-FirebaseWithHate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3XPZ2XV3WU;
@@ -276,6 +356,7 @@
 		};
 		9CA654021E8C28BD00CA982D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8144F91326B4620F946FB20C /* Pods-FirebaseWithHate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3XPZ2XV3WU;
@@ -306,6 +387,7 @@
 				9CA654021E8C28BD00CA982D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
