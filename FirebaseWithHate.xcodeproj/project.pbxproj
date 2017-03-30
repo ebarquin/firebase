@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4911859E4BF9F25D003E881E /* Pods_FirebaseWithHate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF00000A7F20A8CEBA69011 /* Pods_FirebaseWithHate.framework */; };
+		9C83B8501E8D6EBD0072AC65 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C83B84F1E8D6EBD0072AC65 /* LoginViewController.swift */; };
 		9C9E24451E8D55B60013ECEB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9E24441E8D55B60013ECEB /* SecondViewController.swift */; };
 		9CA653F21E8C28BD00CA982D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA653F11E8C28BD00CA982D /* AppDelegate.swift */; };
 		9CA653F41E8C28BD00CA982D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA653F31E8C28BD00CA982D /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 		7FF00000A7F20A8CEBA69011 /* Pods_FirebaseWithHate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseWithHate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8144F91326B4620F946FB20C /* Pods-FirebaseWithHate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseWithHate.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseWithHate/Pods-FirebaseWithHate.release.xcconfig"; sourceTree = "<group>"; };
 		98B955F5CF7B44884158D0C7 /* Pods-FirebaseWithHate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseWithHate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseWithHate/Pods-FirebaseWithHate.debug.xcconfig"; sourceTree = "<group>"; };
+		9C83B84F1E8D6EBD0072AC65 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9C9E24441E8D55B60013ECEB /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9CA653EE1E8C28BD00CA982D /* FirebaseWithHate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseWithHate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA653F11E8C28BD00CA982D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,42 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9C83B8511E8D6EDE0072AC65 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9CA653F31E8C28BD00CA982D /* ViewController.swift */,
+				9C9E24441E8D55B60013ECEB /* SecondViewController.swift */,
+				9C83B84F1E8D6EBD0072AC65 /* LoginViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9C83B8521E8D6EF20072AC65 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9CA653F11E8C28BD00CA982D /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		9C83B8531E8D6F0B0072AC65 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				9CA653F51E8C28BD00CA982D /* Main.storyboard */,
+				9CA653FA1E8C28BD00CA982D /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		9C83B8541E8D6F300072AC65 /* Config Data */ = {
+			isa = PBXGroup;
+			children = (
+				9CA654031E8C2A7400CA982D /* GoogleService-Info.plist */,
+				9CA653FD1E8C28BD00CA982D /* Info.plist */,
+			);
+			name = "Config Data";
+			sourceTree = "<group>";
+		};
 		9CA653E51E8C28BD00CA982D = {
 			isa = PBXGroup;
 			children = (
@@ -82,14 +120,11 @@
 		9CA653F01E8C28BD00CA982D /* FirebaseWithHate */ = {
 			isa = PBXGroup;
 			children = (
-				9CA654031E8C2A7400CA982D /* GoogleService-Info.plist */,
-				9CA653F11E8C28BD00CA982D /* AppDelegate.swift */,
-				9CA653F31E8C28BD00CA982D /* ViewController.swift */,
-				9CA653F51E8C28BD00CA982D /* Main.storyboard */,
+				9C83B8541E8D6F300072AC65 /* Config Data */,
+				9C83B8521E8D6EF20072AC65 /* AppDelegate */,
+				9C83B8511E8D6EDE0072AC65 /* Controllers */,
+				9C83B8531E8D6F0B0072AC65 /* StoryBoard */,
 				9CA653F81E8C28BD00CA982D /* Assets.xcassets */,
-				9CA653FA1E8C28BD00CA982D /* LaunchScreen.storyboard */,
-				9CA653FD1E8C28BD00CA982D /* Info.plist */,
-				9C9E24441E8D55B60013ECEB /* SecondViewController.swift */,
 			);
 			path = FirebaseWithHate;
 			sourceTree = "<group>";
@@ -219,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C83B8501E8D6EBD0072AC65 /* LoginViewController.swift in Sources */,
 				9C9E24451E8D55B60013ECEB /* SecondViewController.swift in Sources */,
 				9CA653F41E8C28BD00CA982D /* ViewController.swift in Sources */,
 				9CA653F21E8C28BD00CA982D /* AppDelegate.swift in Sources */,
