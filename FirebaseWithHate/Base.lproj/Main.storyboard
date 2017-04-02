@@ -96,7 +96,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login con Google"/>
                                 <connections>
-                                    <action selector="doLoginWithGoogle:" destination="nhK-UX-cd7" eventType="touchUpInside" id="X2R-fe-29N"/>
+                                    <action selector="googleBtnAction:" destination="nhK-UX-cd7" eventType="touchUpInside" id="hNh-Vd-WSj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -108,6 +108,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="M03-2N-Qun"/>
                     <connections>
+                        <outlet property="googleBtnSignIn" destination="nXW-if-WHc" id="6gY-Dc-Dz7"/>
                         <segue destination="wqx-fo-Pe6" kind="show" identifier="launchWithLogged" id="xEM-zf-HXl"/>
                     </connections>
                 </viewController>

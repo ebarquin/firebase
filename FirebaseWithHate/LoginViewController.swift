@@ -8,15 +8,18 @@
 
 import UIKit
 import FirebaseAuth
+import GoogleSignIn
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, GIDSignInUIDelegate {
     
     var handle: FIRAuthStateDidChangeListenerHandle!
 
+    @IBOutlet weak var googleBtnSignIn: GIDSignInButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        GIDSignIn.sharedInstance().uiDelegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,6 +45,10 @@ class LoginViewController: UIViewController {
             print(user?.uid)
         })
     }
+    @IBAction func googleBtnAction(_ sender: Any) {
+        GIDSignIn.sharedInstance().signIn()
+        
+    }
     
     @IBAction func doLogin(_ sender: Any) {
         showUserLoginDialog(withCommand: login, userAction: .toLogin)
@@ -52,15 +59,12 @@ class LoginViewController: UIViewController {
         makeLogout()
     }
     
-    @IBAction func doLoginWithGoogle(_ sender: Any) {
-        makeLogout()
-        
-    }
     
     fileprivate func makeLogout() {
         if let _ = FIRAuth.auth()?.currentUser {
             do {
                 try FIRAuth.auth()?.signOut()
+                GIDSignIn.sharedInstance().signOut()
             } catch let error {
                 print(error)
             }
