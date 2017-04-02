@@ -91,6 +91,14 @@
                                     <action selector="doAnonimo:" destination="nhK-UX-cd7" eventType="touchUpInside" id="K3w-jU-hA7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXW-if-WHc">
+                                <rect key="frame" x="128" y="568" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login con Google"/>
+                                <connections>
+                                    <action selector="doLoginWithGoogle:" destination="nhK-UX-cd7" eventType="touchUpInside" id="X2R-fe-29N"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -143,7 +151,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wqx-fo-Pe6" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gMa-JJ-Swy">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="gMa-JJ-Swy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -161,7 +169,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QBd-ud-2ea" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xaw-6q-Nu6">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xaw-6q-Nu6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
